@@ -1,8 +1,6 @@
-import matplotlib.pyplot as plt
-
-# Create a histogram
-plt.hist(df['Age'].dropna(), bins=20, color='skyblue', edgecolor='black')
-plt.title('Distribution of Passenger Ages')
+# Create scatter plot
+plt.scatter(df['age'], df['chol'], color='orange')
+plt.title('Relationship between Age and Cholesterol')
 plt.xlabel('Age')
-plt.ylabel('Frequency')
+plt.ylabel('Cholesterol')
 plt.show()
