@@ -1,8 +1,10 @@
 # Import necessary libraries
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-# Load the Titanic dataset from Kaggle
-df = pd.read_csv('path/to/your/kaggle/titanic/dataset/train.csv')
+# Load the Heart Disease dataset
+df = pd.read_csv('heart.csv')
 
 # Display the first few rows of the dataset
 print(df.head())
