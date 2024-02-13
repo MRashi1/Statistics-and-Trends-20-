@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 
 # Create a histogram
-plt.hist(df['numerical_feature'], bins=20, color='skyblue', edgecolor='black')
-plt.title('Distribution of Numerical Feature')
-plt.xlabel('Value')
+plt.hist(df['Age'].dropna(), bins=20, color='skyblue', edgecolor='black')
+plt.title('Distribution of Passenger Ages')
+plt.xlabel('Age')
 plt.ylabel('Frequency')
 plt.show()
