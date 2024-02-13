@@ -1,6 +1,6 @@
-# Create scatter plot
-plt.scatter(df['age'], df['chol'], color='orange')
-plt.title('Relationship between Age and Cholesterol')
+# Create histogram
+plt.hist(df['age'], bins=10, color='skyblue', edgecolor='black')
+plt.title('Distribution of Age')
 plt.xlabel('Age')
-plt.ylabel('Cholesterol')
+plt.ylabel('Frequency')
 plt.show()
