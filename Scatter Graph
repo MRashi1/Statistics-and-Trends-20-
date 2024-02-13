@@ -1,6 +1,6 @@
-# Create a scatter plot
-plt.scatter(df['Age'], df['Fare'], color='orange')
-plt.title('Relationship between Age and Fare')
+# Create scatter plot
+plt.scatter(df['age'], df['chol'], color='orange')
+plt.title('Relationship between Age and Cholesterol')
 plt.xlabel('Age')
-plt.ylabel('Fare')
+plt.ylabel('Cholesterol')
 plt.show()
