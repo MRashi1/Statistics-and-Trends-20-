@@ -1,8 +1,8 @@
 # Import necessary libraries
 import pandas as pd
 
-# Load the dataset
-df = pd.read_csv('dataset.csv')
+# Load the Titanic dataset from Kaggle
+df = pd.read_csv('path/to/your/kaggle/titanic/dataset/train.csv')
 
 # Display the first few rows of the dataset
 print(df.head())
