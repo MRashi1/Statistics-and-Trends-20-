@@ -8,3 +8,10 @@ df = pd.read_csv('heart.csv')
 
 # Display the first few rows of the dataset
 print(df.head())
+
+# Check for missing values
+missing_values = df.isnull().sum()
+print("Missing Values:\n", missing_values)
+
+# Drop rows with missing values
+df.dropna(inplace=True)
