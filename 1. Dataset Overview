@@ -6,6 +6,10 @@ import seaborn as sns
 # Load the Heart Disease dataset
 df = pd.read_csv('C:\Docs\heart.csv')
 
+# Compute summary statistics
+summary_stats = df.describe()
+print(summary_stats)
+
 # Display the first few rows of the dataset
 print(df.head())
 
