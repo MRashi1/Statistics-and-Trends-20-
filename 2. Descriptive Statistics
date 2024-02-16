@@ -1,0 +1,14 @@
+# Display basic statistics of the dataset
+print(df.describe())
+
+# Calculate and display major moments for numerical features
+moments = df.describe().transpose()[['mean', '50%', 'std']]
+skewness = df.skew()
+kurtosis = df.kurtosis()
+
+# Combine moments, skewness, and kurtosis into a single DataFrame
+statistics_df = pd.concat([moments, skewness, kurtosis], axis=1)
+statistics_df.columns = ['Mean', 'Median', 'Standard Deviation', 'Skewness', 'Kurtosis']
+
+# Display the statistics
+print(statistics_df)
